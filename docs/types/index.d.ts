@@ -194,11 +194,11 @@ interface Policies {
 }
 
 /**
-* Class for performing a reduction on an input ndarray.
+* Class for performing a reduction on an input ndarray according to a callback function.
 */
 declare class UnaryStrided1dDispatchBy<T, U> {
 	/**
-	* Constructor for performing a reduction on an input ndarray.
+	* Constructor for performing a reduction on an input ndarray according to a callback function.
 	*
 	* @param table - dispatch table
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument

@@ -198,8 +198,8 @@ var base = require( '@stdlib/stats-base-ndarray-max-by' );
 var dtypes = require( '@stdlib/ndarray-dtypes' );
 var ndarray = require( '@stdlib/ndarray-base-ctor' );
 
-var idt = dtypes();
-var odt = dtypes( 'real_and_generic' );
+var idt = dtypes( 'real_and_generic' );
+var odt = idt;
 var policies = {
     'output': 'same',
     'casting': 'none'
@@ -286,8 +286,8 @@ var ndarray = require( '@stdlib/ndarray-ctor' );
 var UnaryStrided1dDispatchBy = require( '@stdlib/ndarray-base-unary-reduce-strided1d-dispatch-by' );
 
 // Define the supported input and output data types:
-var idt = dtypes();
-var odt = dtypes( 'real_and_generic' );
+var idt = dtypes( 'real_and_generic' );
+var odt = idt;
 
 // Define dispatch policies:
 var policies = {
@@ -366,11 +366,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
@@ -416,8 +411,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/tree/esm
 [esm-readme]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/main/LICENSE
 
 [@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies
 

@@ -28,8 +28,8 @@ var ndarray = require( '@stdlib/ndarray-ctor' );
 var UnaryStrided1dDispatchBy = require( './../lib' );
 
 // Define the supported input and output data types:
-var idt = dtypes();
-var odt = dtypes( 'real_and_generic' );
+var idt = dtypes( 'real_and_generic' );
+var odt = idt;
 
 // Define dispatch policies:
 var policies = {
