@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`b937bc4`](https://github.com/stdlib-js/stdlib/commit/b937bc453930ccb515898c2e2040c65f9f9ae2ad) - **docs:** fix comment _(by Athan Reines)_
 -   [`7ff8051`](https://github.com/stdlib-js/stdlib/commit/7ff805189d4e18714abb7ad430e409bae2db442b) - **docs:** fix comment _(by Athan Reines)_
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - **fix:** use correct variable _(by Athan Reines)_
 -   [`71f1df4`](https://github.com/stdlib-js/stdlib/commit/71f1df4e7a7c70aa99e3ea52aaabaafa6d033878) - **docs:** update examples _(by Athan Reines)_
