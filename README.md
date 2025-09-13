@@ -150,7 +150,7 @@ The method has the following parameters:
 The method accepts the following options:
 
 -   **dims**: list of dimensions over which to perform a reduction.
--   **dtype**: output ndarray data type. Setting this option, overrides the output data type policy.
+-   **dtype**: output ndarray data type. Setting this option overrides the output data type policy.
 -   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions. Default: `false`.
 
 By default, the method returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
@@ -366,11 +366,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
@@ -416,8 +411,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/tree/esm
 [esm-readme]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/main/LICENSE
 
 [@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies
 
