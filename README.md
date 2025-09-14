@@ -37,14 +37,32 @@ limitations under the License.
 
 > Constructor for performing a reduction on an input ndarray according to a callback function.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-unary-reduce-strided1d-dispatch-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import UnaryStrided1dDispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by@esm/index.mjs';
+var UnaryStrided1dDispatchBy = require( '@stdlib/ndarray-base-unary-reduce-strided1d-dispatch-by' );
 ```
 
 #### UnaryStrided1dDispatchBy( table, idtypes, odtypes, policies )
@@ -52,7 +70,7 @@ import UnaryStrided1dDispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndar
 Constructor for performing a reduction on an input ndarray according to a callback function.
 
 ```javascript
-import base from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
+var base = require( '@stdlib/stats-base-ndarray-max-by' );
 
 var table = {
     'default': base
@@ -92,8 +110,8 @@ The constructor has the following parameters:
 Performs a reduction on a provided input ndarray according to a callback function.
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
-import base from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
+var base = require( '@stdlib/stats-base-ndarray-max-by' );
 
 var table = {
     'default': base
@@ -138,9 +156,9 @@ The method accepts the following options:
 By default, the method returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
-import base from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
+var base = require( '@stdlib/stats-base-ndarray-max-by' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 
 var table = {
     'default': base
@@ -176,9 +194,9 @@ var dt = getDType( y );
 Performs a reduction on a provided input ndarray according to a callback function and assigns results to a provided output ndarray.
 
 ```javascript
-import base from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
+var base = require( '@stdlib/stats-base-ndarray-max-by' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = idt;
@@ -257,20 +275,15 @@ The method accepts the following options:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import base from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
-import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@esm/index.mjs';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import UnaryStrided1dDispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by@esm/index.mjs';
+```javascript
+var base = require( '@stdlib/stats-base-ndarray-max-by' );
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var uniform = require( '@stdlib/random-base-uniform' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var dtype = require( '@stdlib/ndarray-dtype' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var UnaryStrided1dDispatchBy = require( '@stdlib/ndarray-base-unary-reduce-strided1d-dispatch-by' );
 
 // Define the supported input and output data types:
 var idt = dtypes( 'real_and_generic' );
@@ -320,10 +333,6 @@ console.log( dt );
 
 // Print the results:
 console.log( ndarray2array( y ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -347,7 +356,7 @@ console.log( ndarray2array( y ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -410,9 +419,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-unary-reduce-strided1d-dispatch-by/main/LICENSE
 
-[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies/tree/esm
+[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies
 
-[@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray-input-casting-policies/tree/esm
+[@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray-input-casting-policies
 
 </section>
 
