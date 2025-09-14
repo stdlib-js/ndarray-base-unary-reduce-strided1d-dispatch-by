@@ -62,6 +62,7 @@
     "@stdlib/ndarray-base-assign": "^0.1.1",
     "@stdlib/ndarray-base-dtype": "^0.2.2",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
+    "@stdlib/ndarray-base-dtypes2enums": "github:stdlib-js/ndarray-base-dtypes2enums#main",
     "@stdlib/ndarray-base-empty": "^0.3.0",
     "@stdlib/ndarray-base-order": "^0.2.2",
     "@stdlib/ndarray-base-spread-dimensions": "github:stdlib-js/ndarray-base-spread-dimensions#main",

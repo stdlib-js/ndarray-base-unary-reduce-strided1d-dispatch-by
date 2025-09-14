@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`5396232`](https://github.com/stdlib-js/stdlib/commit/539623214add7405c45c70f16ef7ab001f5dc0e0) - **refactor:** use base utility _(by Athan Reines)_
 -   [`351db28`](https://github.com/stdlib-js/stdlib/commit/351db2889ebd45eb0dc55efd4edb1e4d6e20daa7) - **refactor:** use array utility _(by Athan Reines)_
 -   [`626b52b`](https://github.com/stdlib-js/stdlib/commit/626b52bc5f30d90237d82055095814a5f6e75546) - **docs:** remove comma _(by Athan Reines)_
 -   [`794dcb3`](https://github.com/stdlib-js/stdlib/commit/794dcb39a1a97b958b56f2a56ada615344a0d993) - **docs:** fix examples _(by Athan Reines)_
